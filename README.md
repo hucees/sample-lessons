@@ -12,6 +12,8 @@ A small Next.js K-4 curriculum provider website built specifically for testing e
   - Social Studies
 - 20 individual course pages
 - 36 instructional weeks per course
+- 36 distinct provider-hosted weekly lesson URLs per course
+- 720 provider-hosted weekly lesson pages across the K–4 catalog
 - 9 units per course, 4 weeks each
 - Clear semantic H1/H2/H3 headings
 - Stable internal links between catalog, grade, and course pages
@@ -51,8 +53,9 @@ Try feeding Open House each of these public URLs after deployment:
 1. `/` — general provider home page
 2. `/catalog` — HTML page containing all 20 course cards
 3. `/grades/grade-4` — one-grade catalog page
-4. `/grades/grade-4/mathematics` — individual provider-hosted course
-5. `/curriculum.json` — machine-readable complete catalog
+4. `/grades/grade-4/mathematics` — individual provider-hosted course with 36 weekly lesson links
+5. `/grades/grade-4/mathematics/week-1` — distinct provider-hosted weekly lesson
+6. `/curriculum.json` — machine-readable complete catalog including lesson URLs
 
 This gives you several different real-world ingestion surfaces without changing the underlying curriculum data.
 # sample-lessons
