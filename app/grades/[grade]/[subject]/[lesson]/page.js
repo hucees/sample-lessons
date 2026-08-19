@@ -15,7 +15,7 @@ function parseWeekSlug(
   value,
 ) {
   const match =
-    /^lesson-week-(\d{1,2})$/.exec(
+    /^(?:lesson-)?week-(\d{1,2})$/.exec(
       value ?? "",
     );
 
