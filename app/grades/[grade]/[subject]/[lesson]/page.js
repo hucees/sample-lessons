@@ -374,6 +374,47 @@ export default async function WeeklyLessonPage({
               example using the lesson
               topic.
             </p>
+
+            {grade.slug === "grade-1"
+              && subject.slug === "language-arts"
+              && weekNumber === 1 ? (
+              <form
+                data-open-house-v1o-activity-fixture
+                method="post"
+                action="/provider-answer-sink"
+              >
+                <fieldset>
+                  <legend>
+                    Which word begins with
+                    the same sound as sun?
+                  </legend>
+
+                  <label>
+                    <input
+                      id="v1o-sun-sock"
+                      type="radio"
+                      name="v1o-beginning-sound"
+                      value="sock"
+                    />
+                    Sock
+                  </label>
+
+                  <label>
+                    <input
+                      id="v1o-sun-map"
+                      type="radio"
+                      name="v1o-beginning-sound"
+                      value="map"
+                    />
+                    Map
+                  </label>
+
+                  <button type="submit">
+                    Submit provider answer
+                  </button>
+                </fieldset>
+              </form>
+            ) : null}
           </section>
         </article>
       </main>
