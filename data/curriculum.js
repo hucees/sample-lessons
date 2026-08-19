@@ -179,7 +179,7 @@ export function buildCourseWeeks(
           `Week ${weekNumber}: ${unitTitle}`,
 
         path:
-          `/grades/${grade.slug}/${subject.slug}/week-${weekNumber}`,
+          `/grades/${grade.slug}/${subject.slug}/lesson-week-${weekNumber}`,
       };
     },
   );

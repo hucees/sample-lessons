@@ -302,7 +302,7 @@ export default async function CoursePage({
                           }
                         >
                           <a
-                            data-lesson
+                            className="lesson"
                             data-week={
                               lesson.week_number
                             }

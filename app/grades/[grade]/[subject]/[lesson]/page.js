@@ -15,7 +15,7 @@ function parseWeekSlug(
   value,
 ) {
   const match =
-    /^week-(\d{1,2})$/.exec(
+    /^lesson-week-(\d{1,2})$/.exec(
       value ?? "",
     );
 
@@ -58,7 +58,7 @@ export function generateStaticParams() {
                 subject.slug,
 
               lesson:
-                `week-${lesson.week_number}`,
+                `lesson-week-${lesson.week_number}`,
             }),
           ),
       ),
